@@ -1,0 +1,10 @@
+{
+  "name": "PIXA Agency",
+  "description": "Premium Creative Digital Marketing Agency focusing on visibility, leads, and growth for modern brands.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
