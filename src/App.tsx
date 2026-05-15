@@ -13,6 +13,10 @@ import Contact from "./pages/Contact";
 import KismatKonnect from "./pages/KismatKonnect";
 import { motion, AnimatePresence } from "motion/react";
 import { BackgroundLines } from "./components/BackgroundLines";
+<<<<<<< HEAD
+=======
+import ScrollToTop from "./components/ScrollToTop";
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
 
 function PageWrapper({ children }: { children: React.ReactNode }) {
   return (
@@ -42,6 +46,10 @@ function GlobalBackground() {
 export default function App() {
   return (
     <Router>
+<<<<<<< HEAD
+=======
+      <ScrollToTop />
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
       <div className="min-h-screen bg-background-deep text-white selection:bg-brand-primary/30 selection:text-brand-primary/20 relative">
         <GlobalBackground />
         <Navbar />

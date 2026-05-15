@@ -1,11 +1,18 @@
 import { Check, X, Shield, Globe, Zap, Headset } from "lucide-react";
 import { motion } from "motion/react";
+<<<<<<< HEAD
+=======
+import { Link } from "react-router-dom";
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
 import { BackgroundLines } from "../components/BackgroundLines";
 
 const plans = [
   {
     name: "Starter",
+<<<<<<< HEAD
     price: "₹24,999",
+=======
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
     description: "Perfect for early-stage startups and small businesses.",
     features: [
       "12 Social Media Posts/mo",
@@ -19,7 +26,10 @@ const plans = [
   },
   {
     name: "Growth",
+<<<<<<< HEAD
     price: "₹49,999",
+=======
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
     description: "Designed for scaling brands requiring multi-channel presence.",
     features: [
       "24 Social Media Posts/mo",
@@ -34,7 +44,10 @@ const plans = [
   },
   {
     name: "Premium",
+<<<<<<< HEAD
     price: "Custom",
+=======
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
     description: "Enterprise solutions for full-scale digital dominance.",
     features: [
       "Daily Social Content",
@@ -83,10 +96,13 @@ export default function Pricing() {
 
               <div className="space-y-6 mb-10">
                 <h3 className="text-2xl font-display font-bold">{plan.name}</h3>
+<<<<<<< HEAD
                 <div className="flex items-baseline gap-1">
                    <span className="text-5xl font-display font-bold">{plan.price}</span>
                    {plan.price !== "Custom" && <span className="text-white/30 text-sm">/month</span>}
                 </div>
+=======
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
                 <p className="text-white/50 text-sm leading-relaxed">{plan.description}</p>
               </div>
 
@@ -110,11 +126,22 @@ export default function Pricing() {
               </div>
 
               <div className="pt-10">
+<<<<<<< HEAD
                 <button className={`w-full py-4 rounded-full font-bold transition-all ${
                   plan.highlight ? "bg-white text-black hover:shadow-xl" : "bg-white/5 text-white border border-white/10 hover:bg-white/10"
                 }`}>
                   Get Started
                 </button>
+=======
+                <Link 
+                  to="/contact"
+                  className={`block w-full py-4 rounded-full font-bold text-center transition-all ${
+                    plan.highlight ? "bg-white text-black hover:shadow-xl" : "bg-white/5 text-white border border-white/10 hover:bg-white/10"
+                  }`}
+                >
+                  Get Quote
+                </Link>
+>>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
               </div>
             </motion.div>
           ))}
