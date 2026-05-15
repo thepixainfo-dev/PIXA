@@ -73,11 +73,6 @@ export default function KismatKonnect() {
             animate={{ opacity: 1, scale: 1 }}
             className="flex justify-center mb-4"
           >
-<<<<<<< HEAD
-            <div className="w-32 h-32 rounded-full glass flex items-center justify-center p-4">
-               {/* Placeholder for Kismat Konnect Logo */}
-               <div className="text-brand-primary text-4xl font-display font-bold">KK</div>
-=======
             <div className="w-32 h-32 rounded-full glass flex items-center justify-center overflow-hidden">
                <img 
                  src="https://drive.google.com/thumbnail?id=1Zlfvdjg68EJ3K57q_sccd6Kqollc_o5z&sz=w1000" 
@@ -85,7 +80,6 @@ export default function KismatKonnect() {
                  className="w-full h-full object-cover"
                  referrerPolicy="no-referrer"
                />
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
             </div>
           </motion.div>
           <motion.div 

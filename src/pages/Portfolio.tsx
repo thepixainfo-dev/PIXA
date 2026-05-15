@@ -4,10 +4,6 @@ import { ArrowUpRight, Play, ExternalLink, X } from "lucide-react";
 import { BackgroundLines } from "../components/BackgroundLines";
 
 const driveImageIds = [
-<<<<<<< HEAD
-  "1-d8h2M-BkcPIV1sO-p4MlLuXnnBSUOWJ",
-=======
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
   "10ru8uD2RmNnhgT1biqhTxMlz6zcIF8S4",
   "114oqtfQp0zdeELK1E4fIfEh8VMSnUFgJ",
   "13e8b-zpDvO5xUhYFDGxYcMfhK7aF8M-H",
@@ -17,10 +13,6 @@ const driveImageIds = [
   "1CoRrzobw56_fcKLOq6c7p2ktb5Nlphc4",
   "1Dv25_0gmCZQWwAQgI5CrWZ_3wnfa2oWP",
   "1FVos1Ug0Zvdcp8Sn6bRmDRjRIiJnlPHR",
-<<<<<<< HEAD
-  "1GxhCl3XGk3PnPo7uKKR8xdgABOn7_8zq",
-=======
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
   "1H-lGz3AI0vqc7YzgTx2onGJL5rbmiZ3T",
   "1H39ZNEIpt3gUY1y38IDY4XEQOR_vxepo",
   "1H7sJnODbQZQEdsNA5qeyGPjqOYRDoG2t",
@@ -57,16 +49,6 @@ const driveImageIds = [
   "1zVAGCrkn0_EAoY5J_V8bVqJuhPxO3yvr"
 ];
 
-<<<<<<< HEAD
-const projects = driveImageIds.map((id, index) => ({
-  id: index + 1,
-  image: `https://drive.google.com/thumbnail?id=${id}&sz=w1000`,
-  fullImage: `https://drive.google.com/thumbnail?id=${id}&sz=w4000`,
-}));
-
-export default function Portfolio() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-=======
 const youtubeShortsIds = [
   "huYdRNIXS7M",
   "g8Dl2N-MO-Q",
@@ -100,7 +82,6 @@ const items: PortfolioItem[] = [
 
 export default function Portfolio() {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
 
   return (
     <div className="pt-20 min-h-screen overflow-hidden">
@@ -121,11 +102,7 @@ export default function Portfolio() {
               transition={{ delay: 0.1 }}
               className="text-xl text-white/50"
             >
-<<<<<<< HEAD
-              A clean gallery showcase of our selected works.
-=======
               A clean gallery showcase of our selected works and social media campaigns.
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
             </motion.p>
           </div>
         </div>
@@ -134,39 +111,18 @@ export default function Portfolio() {
       <section className="px-6 pb-32">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<<<<<<< HEAD
-            {projects.map((project) => (
-              <motion.div
-                key={project.id}
-=======
             {items.map((item) => (
               <motion.div
                 key={item.id}
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.4 }}
-<<<<<<< HEAD
-                onClick={() => setSelectedImage(project.fullImage)}
-=======
                 onClick={() => setSelectedItem(item)}
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
                 className="group relative cursor-pointer glass rounded-[2.5rem] overflow-hidden"
               >
                 <div className="aspect-square overflow-hidden relative">
                   <img 
-<<<<<<< HEAD
-                    src={project.image} 
-                    alt="Portfolio Work" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                     <div className="w-16 h-16 rounded-full bg-white text-black flex items-center justify-center scale-0 group-hover:scale-100 transition-transform delay-100">
-                        <ArrowUpRight size={32} />
-                     </div>
-                  </div>
-=======
                     src={item.thumbnail} 
                     alt="Portfolio Work" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -183,7 +139,6 @@ export default function Portfolio() {
                       VIDEO
                     </div>
                   )}
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
                 </div>
               </motion.div>
             ))}
@@ -193,41 +148,18 @@ export default function Portfolio() {
 
       {/* Lightbox */}
       <AnimatePresence>
-<<<<<<< HEAD
-        {selectedImage && (
-=======
         {selectedItem && (
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-4 md:p-8"
-<<<<<<< HEAD
-            onClick={() => setSelectedImage(null)}
-=======
             onClick={() => setSelectedItem(null)}
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
           >
             <motion.button
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               className="absolute top-8 right-8 text-white hover:text-brand-primary transition-colors z-10"
-<<<<<<< HEAD
-              onClick={() => setSelectedImage(null)}
-            >
-              <X size={48} />
-            </motion.button>
-            <motion.img
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              src={selectedImage}
-              alt="Full Screen View"
-              className="max-w-full max-h-full rounded-2xl shadow-2xl object-contain"
-              onClick={(e) => e.stopPropagation()}
-            />
-=======
               onClick={() => setSelectedItem(null)}
             >
               <X size={48} />
@@ -260,7 +192,6 @@ export default function Portfolio() {
                 )}
               </motion.div>
             </div>
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
           </motion.div>
         )}
       </AnimatePresence>

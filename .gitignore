@@ -5,9 +5,4 @@ coverage/
 .DS_Store
 *.log
 .env*
-!.env.example
-<<<<<<< HEAD
-=======
-update.bat
-.git/
->>>>>>> de3831e (Update from AI Studio - Fri 05/15/2026 11:33:45.90)
+!.env.e
