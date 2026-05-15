@@ -11,6 +11,8 @@ import Blog from "./pages/Blog";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import KismatKonnect from "./pages/KismatKonnect";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 import { motion, AnimatePresence } from "motion/react";
 import { BackgroundLines } from "./components/BackgroundLines";
 import ScrollToTop from "./components/ScrollToTop";
@@ -60,6 +62,8 @@ export default function App() {
               <Route path="/careers" element={<PageWrapper><Careers /></PageWrapper>} />
               <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
               <Route path="/kismat-konnect" element={<PageWrapper><KismatKonnect /></PageWrapper>} />
+              <Route path="/terms" element={<PageWrapper><Terms /></PageWrapper>} />
+              <Route path="/privacy" element={<PageWrapper><Privacy /></PageWrapper>} />
             </Routes>
           </AnimatePresence>
         </main>
